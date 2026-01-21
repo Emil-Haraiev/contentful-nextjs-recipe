@@ -5,7 +5,7 @@ import RecipeListItem from '@/components/recipes/RecipeListItem'
 export default async function RecipesPage() {
     const allRecipes = await getRecipes()
     const featured = allRecipes.slice(0, 3)
-    const recent = allRecipes.slice(3, 6)
+    const recent = allRecipes.slice(3, allRecipes.length)
 
     return (
         <section className="mx-auto max-w-7xl px-4 py-12 space-y-12">

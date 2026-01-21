@@ -19,5 +19,6 @@ export type RecipeEntry = {
         description: string
         method: string
         thumbnail?: ContentfulImage
+        ingredients: string
     }
 }

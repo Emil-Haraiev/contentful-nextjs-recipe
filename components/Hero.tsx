@@ -7,13 +7,13 @@ type HeroProps = {
 
 export default function Hero({ title, imageUrl }: HeroProps) {
     return (
-        <section className="relative h-90 w-full">
+        <section className="relative h-[360px] w-full">
             <Image
                 src={imageUrl}
                 alt={title}
                 fill
                 priority
-                className="object-cover"
+                className="object-cover object-center"
             />
 
             <div className="absolute inset-0 bg-black/40" />

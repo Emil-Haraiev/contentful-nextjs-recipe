@@ -8,6 +8,8 @@ export async function getRecipes(limit?: number) {
         order: ['sys.createdAt'],
         limit,
     })
+    return res.items.map((entry) => mapRecipe(entry as any))
 
-    return res.items.map((entry) => mapRecipe(entry))
+
 }
+

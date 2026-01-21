@@ -8,6 +8,7 @@ export function mapRecipe(entry: RecipeEntry) {
         slug: entry.fields.slug,
         description: entry.fields.description,
         method: entry.fields.method,
+        ingredients: entry.fields.ingredients,
         image: image
             ? {
                 url: 'https:' + image.fields.file.url,
